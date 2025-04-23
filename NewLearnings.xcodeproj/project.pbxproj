@@ -7,24 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2520B6972DB900FE00DD05FC /* AlamofireEasyLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 2520B6962DB900FE00DD05FC /* AlamofireEasyLogger */; };
+		2520B69A2DB9010F00DD05FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2520B6992DB9010F00DD05FC /* Alamofire */; };
 		256EC6402DB8FADA009F4D35 /* NewLearningsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EC63F2DB8FADA009F4D35 /* NewLearningsApp.swift */; };
 		256EC6422DB8FADA009F4D35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EC6412DB8FADA009F4D35 /* ContentView.swift */; };
 		256EC6442DB8FADE009F4D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256EC6432DB8FADE009F4D35 /* Assets.xcassets */; };
 		256EC6472DB8FADE009F4D35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256EC6462DB8FADE009F4D35 /* Preview Assets.xcassets */; };
 		256EC6512DB8FADF009F4D35 /* NewLearningsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EC6502DB8FADF009F4D35 /* NewLearningsTests.swift */; };
-		256EC65B2DB8FADF009F4D35 /* NewLearningsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EC65A2DB8FADF009F4D35 /* NewLearningsUITests.swift */; };
-		256EC65D2DB8FADF009F4D35 /* NewLearningsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EC65C2DB8FADF009F4D35 /* NewLearningsUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		256EC64D2DB8FADF009F4D35 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 256EC6342DB8FADA009F4D35 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 256EC63B2DB8FADA009F4D35;
-			remoteInfo = NewLearnings;
-		};
-		256EC6572DB8FADF009F4D35 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 256EC6342DB8FADA009F4D35 /* Project object */;
 			proxyType = 1;
@@ -41,9 +34,6 @@
 		256EC6462DB8FADE009F4D35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		256EC64C2DB8FADF009F4D35 /* NewLearningsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewLearningsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		256EC6502DB8FADF009F4D35 /* NewLearningsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLearningsTests.swift; sourceTree = "<group>"; };
-		256EC6562DB8FADF009F4D35 /* NewLearningsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewLearningsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		256EC65A2DB8FADF009F4D35 /* NewLearningsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLearningsUITests.swift; sourceTree = "<group>"; };
-		256EC65C2DB8FADF009F4D35 /* NewLearningsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLearningsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +41,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2520B6972DB900FE00DD05FC /* AlamofireEasyLogger in Frameworks */,
+				2520B69A2DB9010F00DD05FC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		256EC6492DB8FADF009F4D35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		256EC6532DB8FADF009F4D35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,7 +61,6 @@
 			children = (
 				256EC63E2DB8FADA009F4D35 /* NewLearnings */,
 				256EC64F2DB8FADF009F4D35 /* NewLearningsTests */,
-				256EC6592DB8FADF009F4D35 /* NewLearningsUITests */,
 				256EC63D2DB8FADA009F4D35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +70,6 @@
 			children = (
 				256EC63C2DB8FADA009F4D35 /* NewLearnings.app */,
 				256EC64C2DB8FADF009F4D35 /* NewLearningsTests.xctest */,
-				256EC6562DB8FADF009F4D35 /* NewLearningsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,15 +101,6 @@
 			path = NewLearningsTests;
 			sourceTree = "<group>";
 		};
-		256EC6592DB8FADF009F4D35 /* NewLearningsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				256EC65A2DB8FADF009F4D35 /* NewLearningsUITests.swift */,
-				256EC65C2DB8FADF009F4D35 /* NewLearningsUITestsLaunchTests.swift */,
-			);
-			path = NewLearningsUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +117,10 @@
 			dependencies = (
 			);
 			name = NewLearnings;
+			packageProductDependencies = (
+				2520B6962DB900FE00DD05FC /* AlamofireEasyLogger */,
+				2520B6992DB9010F00DD05FC /* Alamofire */,
+			);
 			productName = NewLearnings;
 			productReference = 256EC63C2DB8FADA009F4D35 /* NewLearnings.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +143,6 @@
 			productReference = 256EC64C2DB8FADF009F4D35 /* NewLearningsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		256EC6552DB8FADF009F4D35 /* NewLearningsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 256EC6662DB8FADF009F4D35 /* Build configuration list for PBXNativeTarget "NewLearningsUITests" */;
-			buildPhases = (
-				256EC6522DB8FADF009F4D35 /* Sources */,
-				256EC6532DB8FADF009F4D35 /* Frameworks */,
-				256EC6542DB8FADF009F4D35 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				256EC6582DB8FADF009F4D35 /* PBXTargetDependency */,
-			);
-			name = NewLearningsUITests;
-			productName = NewLearningsUITests;
-			productReference = 256EC6562DB8FADF009F4D35 /* NewLearningsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +160,6 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 256EC63B2DB8FADA009F4D35;
 					};
-					256EC6552DB8FADF009F4D35 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 256EC63B2DB8FADA009F4D35;
-					};
 				};
 			};
 			buildConfigurationList = 256EC6372DB8FADA009F4D35 /* Build configuration list for PBXProject "NewLearnings" */;
@@ -215,13 +171,16 @@
 				Base,
 			);
 			mainGroup = 256EC6332DB8FADA009F4D35;
+			packageReferences = (
+				2520B6952DB900FE00DD05FC /* XCRemoteSwiftPackageReference "AlamofireEasyLogger" */,
+				2520B6982DB9010F00DD05FC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 256EC63D2DB8FADA009F4D35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				256EC63B2DB8FADA009F4D35 /* NewLearnings */,
 				256EC64B2DB8FADF009F4D35 /* NewLearningsTests */,
-				256EC6552DB8FADF009F4D35 /* NewLearningsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,13 +196,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		256EC64A2DB8FADF009F4D35 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		256EC6542DB8FADF009F4D35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,15 +222,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		256EC6522DB8FADF009F4D35 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				256EC65B2DB8FADF009F4D35 /* NewLearningsUITests.swift in Sources */,
-				256EC65D2DB8FADF009F4D35 /* NewLearningsUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +229,6 @@
 			isa = PBXTargetDependency;
 			target = 256EC63B2DB8FADA009F4D35 /* NewLearnings */;
 			targetProxy = 256EC64D2DB8FADF009F4D35 /* PBXContainerItemProxy */;
-		};
-		256EC6582DB8FADF009F4D35 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 256EC63B2DB8FADA009F4D35 /* NewLearnings */;
-			targetProxy = 256EC6572DB8FADF009F4D35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,42 +450,6 @@
 			};
 			name = Release;
 		};
-		256EC6672DB8FADF009F4D35 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V639XPXR4D;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahimMoGedami.NewLearningsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NewLearnings;
-			};
-			name = Debug;
-		};
-		256EC6682DB8FADF009F4D35 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V639XPXR4D;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ibrahimMoGedami.NewLearningsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NewLearnings;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,16 +480,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		256EC6662DB8FADF009F4D35 /* Build configuration list for PBXNativeTarget "NewLearningsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				256EC6672DB8FADF009F4D35 /* Debug */,
-				256EC6682DB8FADF009F4D35 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2520B6952DB900FE00DD05FC /* XCRemoteSwiftPackageReference "AlamofireEasyLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/strvcom/AlamofireEasyLogger";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.0;
+			};
+		};
+		2520B6982DB9010F00DD05FC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2520B6962DB900FE00DD05FC /* AlamofireEasyLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2520B6952DB900FE00DD05FC /* XCRemoteSwiftPackageReference "AlamofireEasyLogger" */;
+			productName = AlamofireEasyLogger;
+		};
+		2520B6992DB9010F00DD05FC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2520B6982DB9010F00DD05FC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 256EC6342DB8FADA009F4D35 /* Project object */;
 }
