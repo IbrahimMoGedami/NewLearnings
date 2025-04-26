@@ -14,6 +14,8 @@
 		256EC6442DB8FADE009F4D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256EC6432DB8FADE009F4D35 /* Assets.xcassets */; };
 		256EC6472DB8FADE009F4D35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 256EC6462DB8FADE009F4D35 /* Preview Assets.xcassets */; };
 		256EC6512DB8FADF009F4D35 /* NewLearningsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EC6502DB8FADF009F4D35 /* NewLearningsTests.swift */; };
+		25E20FA52DB924A6002BCB2D /* CombineNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = 25E20FA42DB924A6002BCB2D /* CombineNetwork */; };
+		25E20FA82DB92609002BCB2D /* FloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E20FA72DB92609002BCB2D /* FloatingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 		256EC6462DB8FADE009F4D35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		256EC64C2DB8FADF009F4D35 /* NewLearningsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewLearningsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		256EC6502DB8FADF009F4D35 /* NewLearningsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLearningsTests.swift; sourceTree = "<group>"; };
+		25E20FA72DB92609002BCB2D /* FloatingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2520B6972DB900FE00DD05FC /* AlamofireEasyLogger in Frameworks */,
+				25E20FA52DB924A6002BCB2D /* CombineNetwork in Frameworks */,
 				2520B69A2DB9010F00DD05FC /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +81,7 @@
 		256EC63E2DB8FADA009F4D35 /* NewLearnings */ = {
 			isa = PBXGroup;
 			children = (
+				25E20FA62DB925EE002BCB2D /* CustomViews */,
 				256EC63F2DB8FADA009F4D35 /* NewLearningsApp.swift */,
 				256EC6412DB8FADA009F4D35 /* ContentView.swift */,
 				256EC6432DB8FADE009F4D35 /* Assets.xcassets */,
@@ -101,6 +106,14 @@
 			path = NewLearningsTests;
 			sourceTree = "<group>";
 		};
+		25E20FA62DB925EE002BCB2D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				25E20FA72DB92609002BCB2D /* FloatingTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +133,7 @@
 			packageProductDependencies = (
 				2520B6962DB900FE00DD05FC /* AlamofireEasyLogger */,
 				2520B6992DB9010F00DD05FC /* Alamofire */,
+				25E20FA42DB924A6002BCB2D /* CombineNetwork */,
 			);
 			productName = NewLearnings;
 			productReference = 256EC63C2DB8FADA009F4D35 /* NewLearnings.app */;
@@ -174,6 +188,7 @@
 			packageReferences = (
 				2520B6952DB900FE00DD05FC /* XCRemoteSwiftPackageReference "AlamofireEasyLogger" */,
 				2520B6982DB9010F00DD05FC /* XCRemoteSwiftPackageReference "Alamofire" */,
+				25E20FA32DB924A6002BCB2D /* XCRemoteSwiftPackageReference "CombineNetwork" */,
 			);
 			productRefGroup = 256EC63D2DB8FADA009F4D35 /* Products */;
 			projectDirPath = "";
@@ -211,6 +226,7 @@
 			files = (
 				256EC6422DB8FADA009F4D35 /* ContentView.swift in Sources */,
 				256EC6402DB8FADA009F4D35 /* NewLearningsApp.swift in Sources */,
+				25E20FA82DB92609002BCB2D /* FloatingTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +515,14 @@
 				minimumVersion = 5.10.2;
 			};
 		};
+		25E20FA32DB924A6002BCB2D /* XCRemoteSwiftPackageReference "CombineNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IbrahimMoGedami/CombineNetwork.git";
+			requirement = {
+				branch = developement;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -511,6 +535,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2520B6982DB9010F00DD05FC /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		25E20FA42DB924A6002BCB2D /* CombineNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25E20FA32DB924A6002BCB2D /* XCRemoteSwiftPackageReference "CombineNetwork" */;
+			productName = CombineNetwork;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

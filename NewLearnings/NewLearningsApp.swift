@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import CombineNetwork
 
 @main
 struct NewLearningsApp: App {
+    
+    init() {
+        APIConstants.shared.baseURL = ""
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()
