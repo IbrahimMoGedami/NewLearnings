@@ -14,8 +14,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 50) {
-            FloatingTextField(title: "First Name", text: $firstNameTextFiled)
-            FloatingTextField(title: "Last Name", text: $firstNameTextFiled)
+            FloatingBorderTextField(title: "First Name", text: $firstNameTextFiled)
+            FloatingBorderTextField(title: "Last Name", text: $lastNameTextFiled)
         }
         .padding()
     }

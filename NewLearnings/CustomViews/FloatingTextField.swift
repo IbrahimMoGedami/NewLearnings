@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FloatingTextField: View {
+struct FloatingBorderTextField: View {
     
     let title: String
     @Binding var text: String
@@ -19,12 +19,12 @@ struct FloatingTextField: View {
                 .padding(.leading)
                 .frame(height: 55)
                 .focused($isTyping)
-                .background(isTyping ? .blue : .primary, in: RoundedRectangle(cornerRadius: 14).stroke(lineWidth: 2))
+                .background(isTyping ? .blue : .gray, in: RoundedRectangle(cornerRadius: 14).stroke(lineWidth: 2))
             
             Text(title)
                 .padding(.horizontal, 5)
                 .background(.white.opacity(isTyping || !text.isEmpty ? 1 : 0))
-                .foregroundStyle(isTyping ? .blue : .primary)
+                .foregroundStyle(isTyping ? .blue : .gray)
                 .padding(.leading).offset(y: isTyping || !text.isEmpty ? -27 : 0)
                 .onTapGesture {
                     isTyping.toggle()
