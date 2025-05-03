@@ -11,6 +11,7 @@
 		0577D7452DC5EF3000433771 /* CompositeValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577D7442DC5EF3000433771 /* CompositeValidator.swift */; };
 		0577D7472DC5EFD700433771 /* ValidationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577D7462DC5EFD700433771 /* ValidationFactory.swift */; };
 		0577D74D2DC5FF2E00433771 /* RequiredFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0577D74C2DC5FF2E00433771 /* RequiredFieldModifier.swift */; };
+		05AF1DCE2DC68F07008F9740 /* FloatingBorderTextField_README.md in Resources */ = {isa = PBXBuildFile; fileRef = 05AF1DCD2DC68F07008F9740 /* FloatingBorderTextField_README.md */; };
 		2520B6972DB900FE00DD05FC /* AlamofireEasyLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 2520B6962DB900FE00DD05FC /* AlamofireEasyLogger */; };
 		2520B69A2DB9010F00DD05FC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2520B6992DB9010F00DD05FC /* Alamofire */; };
 		256EC6402DB8FADA009F4D35 /* NewLearningsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256EC63F2DB8FADA009F4D35 /* NewLearningsApp.swift */; };
@@ -37,6 +38,7 @@
 		0577D7442DC5EF3000433771 /* CompositeValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeValidator.swift; sourceTree = "<group>"; };
 		0577D7462DC5EFD700433771 /* ValidationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationFactory.swift; sourceTree = "<group>"; };
 		0577D74C2DC5FF2E00433771 /* RequiredFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequiredFieldModifier.swift; sourceTree = "<group>"; };
+		05AF1DCD2DC68F07008F9740 /* FloatingBorderTextField_README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FloatingBorderTextField_README.md; sourceTree = "<group>"; };
 		256EC63C2DB8FADA009F4D35 /* NewLearnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewLearnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		256EC63F2DB8FADA009F4D35 /* NewLearningsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLearningsApp.swift; sourceTree = "<group>"; };
 		256EC6412DB8FADA009F4D35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		256EC6332DB8FADA009F4D35 = {
 			isa = PBXGroup;
 			children = (
+				05AF1DCD2DC68F07008F9740 /* FloatingBorderTextField_README.md */,
 				256EC63E2DB8FADA009F4D35 /* NewLearnings */,
 				256EC64F2DB8FADF009F4D35 /* NewLearningsTests */,
 				256EC63D2DB8FADA009F4D35 /* Products */,
@@ -243,6 +246,7 @@
 			files = (
 				256EC6472DB8FADE009F4D35 /* Preview Assets.xcassets in Resources */,
 				256EC6442DB8FADE009F4D35 /* Assets.xcassets in Resources */,
+				05AF1DCE2DC68F07008F9740 /* FloatingBorderTextField_README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
