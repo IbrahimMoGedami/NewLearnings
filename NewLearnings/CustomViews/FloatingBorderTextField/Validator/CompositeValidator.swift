@@ -9,15 +9,15 @@ import Foundation
 
 public struct CompositeValidator: TextFieldValidator {
     
-    private let rules: [(TextFieldValidator, String)]
+    private let rules: [(TextFieldValidator)]
     
-    public init(_ rules: [(TextFieldValidator, String)]) {
+    public init(_ rules: [(TextFieldValidator)]) {
         self.rules = rules
     }
     
-    public func validate(_ text: String, message _: String = "") -> String? {
-        for (validator, message) in rules {
-            if let error = validator.validate(text, message: message) {
+    public func validate(_ text: String) -> String? {
+        for (validator) in rules {
+            if let error = validator.validate(text) {
                 return error
             }
         }

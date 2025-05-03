@@ -15,10 +15,10 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: 20) {
             FloatingBorderTextField(title: "First Name", text: $firstNameTextFiled)
-                .validation(NameValidator(), message: "Name too short.")
+                .validation(NameValidator())
 
             FloatingBorderTextField(title: "Email", text: $emailTextFiled)
-                .validation(ValidationFactory.email, message: "Please enter a valid email.")
+                .validation(ValidationFactory.email)
         }
         .padding()
     }

@@ -11,22 +11,22 @@ public enum ValidationFactory {
     
     public static var email: TextFieldValidator {
         CompositeValidator([
-            (NonEmptyValidator(), "Email is required."),
-            (EmailValidator(), "Please enter a valid email.")
+            (NonEmptyValidator()),
+            (EmailValidator())
         ])
     }
     
     public static var phone: TextFieldValidator {
         CompositeValidator([
-            (NonEmptyValidator(), "Phone is required."),
-            (NumericValidator(), "Only numbers allowed.")
+            (NonEmptyValidator()),
+            (NumericValidator())
         ])
     }
     
     public static var name: TextFieldValidator {
         CompositeValidator([
-            (NonEmptyValidator(), "Name is required."),
-            (NameValidator(), "Name must be at least 2 characters.")
+            (NonEmptyValidator()),
+            (NameValidator())
         ])
     }
     

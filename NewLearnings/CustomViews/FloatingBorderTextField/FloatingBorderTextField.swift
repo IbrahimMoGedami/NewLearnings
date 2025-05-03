@@ -13,10 +13,9 @@ public struct FloatingBorderTextField: View {
     @Binding var text: String
     
     @State private var validator: TextFieldValidator?
-    @State private var validationMessage: String?
+    @State private var errorMessage: String?
     
     @FocusState private var isTyping: Bool
-    @State private var errorMessage: String?
     
     public init(title: String, text: Binding<String>) {
         self.title = title
@@ -60,9 +59,8 @@ public struct FloatingBorderTextField: View {
     }
     
     private func validate() {
-        if let validator = validator,
-           let validationMessage = validationMessage {
-            errorMessage = validator.validate(text, message: validationMessage)
+        if let validator = validator {
+            errorMessage = validator.validate(text)
         }
     }
     
@@ -70,11 +68,10 @@ public struct FloatingBorderTextField: View {
 
 public extension FloatingBorderTextField {
     
-    func validation(_ validator: TextFieldValidator, message: String) -> FloatingBorderTextField {
+    func validation(_ validator: TextFieldValidator) -> FloatingBorderTextField {
         var view = self
         view._validator = State(initialValue: validator)
-        view._validationMessage = State(initialValue: message)
         return view
     }
-    
+
 }
