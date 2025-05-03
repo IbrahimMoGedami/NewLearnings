@@ -10,14 +10,15 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var firstNameTextFiled: String = ""
-    @State private var lastNameTextFiled: String = ""
     @State private var emailTextFiled: String = ""
     
     var body: some View {
         VStack(spacing: 20) {
-            FloatingBorderTextField(title: "First Name", text: $firstNameTextFiled, validator: ValidationFactory.name)
-            FloatingBorderTextField(title: "Last Name", text: $lastNameTextFiled, validator: ValidationFactory.name)
-            FloatingBorderTextField(title: "Email", text: $emailTextFiled, validator: ValidationFactory.email)
+            FloatingBorderTextField(title: "First Name", text: $firstNameTextFiled)
+                .validation(NameValidator(), message: "Name too short.")
+
+            FloatingBorderTextField(title: "Email", text: $emailTextFiled)
+                .validation(ValidationFactory.email, message: "Please enter a valid email.")
         }
         .padding()
     }
