@@ -66,4 +66,41 @@ public struct NameValidator: TextFieldValidator {
         
         return nil
     }
+
+}
+
+public struct MyPasswordValidator: TextFieldValidator {
+    
+    private let minLength: Int
+    private let requireUppercase: Bool
+    private let requireSpecialCharacter: Bool
+    private let requireDigit: Bool
+    
+    public init(minLength: Int = 8, requireUppercase: Bool = true, requireSpecialCharacter: Bool = true, requireDigit: Bool = true) {
+        self.minLength = minLength
+        self.requireUppercase = requireUppercase
+        self.requireSpecialCharacter = requireSpecialCharacter
+        self.requireDigit = requireDigit
+    }
+    
+    public func validate(_ text: String) -> String? {
+        if text.count < minLength {
+            return "Password must be at least \(minLength) characters long."
+        }
+        
+        if requireUppercase && !text.contains(where: { $0.isUppercase }) {
+            return "Password must contain at least one uppercase letter."
+        }
+        
+        if requireDigit && !text.contains(where: { $0.isNumber }) {
+            return "Password must contain at least one digit."
+        }
+        
+        if requireSpecialCharacter && !text.contains(where: { "!@#$%^&*()_+[]{}|;:,.<>?".contains($0) }) {
+            return "Password must contain at least one special character."
+        }
+        
+        return nil
+    }
+
 }

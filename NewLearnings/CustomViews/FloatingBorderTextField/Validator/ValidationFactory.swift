@@ -30,4 +30,11 @@ public enum ValidationFactory {
         ])
     }
     
+    public static var password: TextFieldValidator {
+        CompositeValidator([
+            (NonEmptyValidator()),
+            (NameValidator())
+        ])
+    }
+    
 }
