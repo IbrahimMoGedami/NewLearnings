@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var emailTextFiled: String = ""
     
     var body: some View {
-        VStack(spacing: 50) {
+        VStack(spacing: 20) {
             FloatingBorderTextField(title: "First Name", text: $firstNameTextFiled, validator: ValidationFactory.name)
             FloatingBorderTextField(title: "Last Name", text: $lastNameTextFiled, validator: ValidationFactory.name)
             FloatingBorderTextField(title: "Email", text: $emailTextFiled, validator: ValidationFactory.email)
