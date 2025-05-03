@@ -23,3 +23,13 @@ struct RequiredFieldModifier: ViewModifier {
     }
 
 }
+
+struct EnableFieldModifier: ViewModifier {
+    
+    let isEnabled: Bool
+    
+    func body(content: Content) -> some View {
+        content.environment(\.isEnabled, isEnabled)
+    }
+
+}

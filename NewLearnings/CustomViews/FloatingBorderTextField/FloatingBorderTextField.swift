@@ -17,7 +17,7 @@ public struct FloatingBorderTextField: View {
     
     @FocusState private var isTyping: Bool
     
-    @State private var showRequiredMark = true
+    @Environment(\.isEnabled) private var isEnabled: Bool
     
     public init(title: String, text: Binding<String>) {
         self.title = title
@@ -31,9 +31,11 @@ public struct FloatingBorderTextField: View {
                     .padding(.leading)
                     .frame(height: 50)
                     .focused($isTyping)
+                    .disabled(!isEnabled)
                     .background(
                         RoundedRectangle(cornerRadius: 14)
                             .stroke(isTyping ? .blue : (errorMessage == nil ? .gray : .red), lineWidth: 1)
+                            .background(isEnabled ? .white : .gray.opacity(0.05))
                     )
                 
                 Text(title)
@@ -55,8 +57,25 @@ public struct FloatingBorderTextField: View {
                     .padding(.leading, 8)
             }
         }
+        .onAppear {
+            // Run validation on view load if text has a value or the user is already typing
+            if !text.isEmpty || isTyping {
+                validate()
+            }
+        }
         .onChange(of: text) { _, _ in
-            validate()
+            // Run validation whenever the text changes (e.g., typing or programmatic update),
+            // but only if the user is typing or the text is not empty
+            if !text.isEmpty || isTyping {
+                validate()
+            }
+        }
+        .onChange(of: isTyping) { _, newValue in
+            // Run validation when typing starts/stops,
+            // and only if typing or the field already has a value
+            if newValue || !text.isEmpty {
+                validate()
+            }
         }
     }
     
@@ -80,4 +99,12 @@ public extension FloatingBorderTextField {
         modifier(RequiredFieldModifier())
     }
 
+}
+
+public extension View {
+    
+    func isEnabled(_ isEnabled: Bool) -> some View {
+        self.modifier(EnableFieldModifier(isEnabled: isEnabled))
+    }
+    
 }
