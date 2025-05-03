@@ -18,10 +18,9 @@ public struct FloatingBorderTextField: View {
     @FocusState private var isTyping: Bool
     @State private var errorMessage: String?
     
-    public init(title: String, text: Binding<String>, validator: TextFieldValidator? = nil) {
+    public init(title: String, text: Binding<String>) {
         self.title = title
         self._text = text
-        self.validator = validator
     }
     
     public var body: some View {
