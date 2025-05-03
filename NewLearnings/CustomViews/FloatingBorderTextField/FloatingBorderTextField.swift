@@ -80,7 +80,10 @@ public struct FloatingBorderTextField: View {
     }
     
     private func validate() {
-        if let validator = validator {
+        if text.isEmpty {
+            // If the field is empty, reset the error (or keep it empty if required is false)
+            errorMessage = nil
+        } else if let validator = validator {
             errorMessage = validator.validate(text)
         }
     }
