@@ -17,6 +17,8 @@ public struct FloatingBorderTextField: View {
     
     @FocusState private var isTyping: Bool
     
+    @State private var showRequiredMark = true
+    
     public init(title: String, text: Binding<String>) {
         self.title = title
         self._text = text
@@ -72,6 +74,10 @@ public extension FloatingBorderTextField {
         var view = self
         view._validator = State(initialValue: validator)
         return view
+    }
+    
+    func required() -> some View {
+        modifier(RequiredFieldModifier())
     }
 
 }
